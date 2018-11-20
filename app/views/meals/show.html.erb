@@ -1,0 +1,11 @@
+<h1><%= @meal.name %></h1>
+
+<h2><%= @meal.description %></h2>
+
+<h3><%= @meal.price %></h3>
+
+<h4><%= @meal.avaliable %></h4>
+
+<%= link_to 'Edit', edit_meal_path(@meal), method: 'get'%>
+
+<%= link_to 'Remove', @meal, method: :delete, data: { confirm: 'Are you sure?'}  %>

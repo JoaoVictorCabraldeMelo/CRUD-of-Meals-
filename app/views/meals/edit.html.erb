@@ -1,0 +1,10 @@
+<h1>Edit A Meal On The Menu</h1>
+
+<%= form_with(model: @meal, local: true) do |form| %>
+    <%= form.text_field :name, placeholder: "name" %>
+    <%= form.text_field :description, placeholder: "description" %>
+    <%= form.text_field :price, placeholder: "price" %>
+    <%= form.text_field :avaliable, placeholder: "avaliable"%>
+
+    <%= form.submit %>
+<% end %>
